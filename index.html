@@ -1,29 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lab Work - HTML Markup</title>
+  <title>DevStudio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #232946;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #2f3e46;
+      color: #fff;
+    }
+    .hero button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    .features, .team {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .features div, .team div {
+      flex: 1;
+      min-width: 250px;
+      text-align: center;
+    }
+    .features img, .team img {
+      width: 100%;
+      max-width: 150px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    footer {
+      background-color: #232946;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to HTML Markup Lab</h1>
-    <nav>
-      <a href="#">Home</a>
-    </nav>
-    <div>
-      <p>Email: example@example.com</p>
-      <p>Phone: +1234567890</p>
-    </div>
-  </header>
-  <main>
-    <h2>Main Section</h2>
-    <p>This is a sample main section to demonstrate semantic HTML.</p>
-    <button type="button">Order Service</button>
-  </main>
-  <footer>
-    <p>&copy; 2024 Your Name</p>
-    <address>Contact us at example@example.com</address>
-  </footer>
+
+<header>
+  <h1>DevStudio</h1>
+  <nav>
+    <a href="#">Про нас</a>
+    <a href="#">Портфоліо</a>
+    <a href="#">Контакти</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Ми створюємо легкі рішення складних завдань для вашого бізнеса</h2>
+  <button>Замовити послугу</button>
+</div>
+
+<section class="features">
+  <div>
+    <h3>Увага до деталей</h3>
+    <p>Ми враховуємо всі потреби клієнта та втілюємо їх у життя.</p>
+  </div>
+  <div>
+    <h3>Пунктуальність</h3>
+    <p>Ми завершуємо проєкти точно в строк.</p>
+  </div>
+  <div>
+    <h3>Сучасні технології</h3>
+    <p>Використовуємо передові інструменти.</p>
+  </div>
+</section>
+
+<section class="portfolio">
+  <h2>Роботи, на яких спеціалізуємось</h2>
+  <div class="features">
+    <div><img src="code.jpg" alt="Код"></div>
+    <div><img src="team.jpg" alt="Команда"></div>
+    <div><img src="laptop.jpg" alt="Ноутбук"></div>
+  </div>
+</section>
+
+<section class="team">
+  <h2>Наша команда</h2>
+  <div>
+    <img src="person1.jpg" alt="Бетті Форц">
+    <h3>Betty Forz</h3>
+    <p>Product Designer</p>
+  </div>
+  <div>
+    <img src="person2.jpg" alt="Фейк Букс">
+    <h3>Fake Books</h3>
+    <p>Frontend Developer</p>
+  </div>
+  <div>
+    <img src="person3.jpg" alt="Міто Діто">
+    <h3>Mito Dito</h3>
+    <p>Marketing</p>
+  </div>
+  <div>
+    <img src="person4.jpg" alt="Ліа Спітц">
+    <h3>Lia Spitz</h3>
+    <p>UI Designer</p>
+  </div>
+</section>
+
+<footer>
+  <p>DevStudio &copy; 2024</p>
+  <p>м. Харків, вул. Ярослава Мудрого, 16 | info@devstudio.com | +38 050 931 11 00</p>
+</footer>
+
 </body>
 </html>
